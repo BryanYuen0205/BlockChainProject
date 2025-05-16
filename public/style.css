@@ -1,0 +1,100 @@
+body {
+  font-family: 'Exo 2', sans-serif;
+  background-image: 
+  url('https://www.transparenttextures.com/patterns/argyle.png'),
+  linear-gradient(135deg, #0d0d0d, #13027f);
+  padding: 2em;
+  /* background-color: #0d0d0d; true black */
+  color: #f5f5f5;
+}
+
+html, body {
+  height: 100%;
+  min-height: 100vh;
+}
+
+
+.section {
+  background: #1a1a1a;
+  border: 1px solid #333;
+  padding: 1.5em;
+  margin-bottom: 2em;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.1);
+}
+
+h1, h2, h3, .navbar-brand {
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  color: #00e0ff;
+  text-shadow: 0 0 3px #00e0ff;
+}
+
+button {
+  background-color: #00e0ff;
+  border: none;
+  color: #0d0d0d;
+  font-weight: bold;
+  padding: 0.6em 1.2em;
+  margin: 0.5em 0;
+  border-radius: 8px;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #00bcd4;
+  transform: scale(1.05);
+}
+
+input {
+  background-color: #2c2c2c;
+  color: white;
+  border: 1px solid #555;
+  border-radius: 5px;
+  padding: 0.4em;
+  margin: 0.3em 0;
+}
+
+.navbar {
+  background: linear-gradient(90deg, #0f0f0f, #1a1a1a);
+}
+
+.navbar-brand {
+  font-size: 1.5em;
+  color: #00e0ff !important;
+}
+
+#account {
+    padding-right: 20px;
+}
+
+@keyframes shake {
+  0% { transform: rotate(0deg); }
+  20% { transform: rotate(-20deg); }
+  40% { transform: rotate(20deg); }
+  60% { transform: rotate(-10deg); }
+  80% { transform: rotate(10deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.dice-rolling {
+  animation: shake 0.6s;
+}
+
+
+#potProgress {
+  width: 100%;
+  background-color: #eee;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+#potBar {
+  width: 0%;
+  height: 30px;
+  background-color: #4caf50;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+  transition: width 0.5s;
+}
